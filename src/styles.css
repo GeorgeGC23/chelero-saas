@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Tipografías */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Space Grotesk', 'JetBrains Mono', monospace;
+
+  /* Superficies Dark Mode Nocturno */
+  --color-surface-ground: #0A0C0E;
+  --color-surface-subtle: #111418;
+  --color-surface-card: #181C22;
+  --color-surface-card-hover: #20252E;
+  --color-surface-elevated: #272D37;
+
+  /* Bordes */
+  --color-border-subtle: #242A34;
+  --color-border-highlight: #374151;
+
+  /* Colores de Marca */
+  --color-brand-primary: #FF9F0A;
+  --color-brand-primary-hover: #FFB340;
+  --color-brand-primary-light: rgba(255, 159, 10, 0.12);
+  --color-brand-secondary: #00D2B4;
+
+  /* Contenidos y Texto */
+  --color-content-primary: #F3F4F6;
+  --color-content-secondary: #9CA3AF;
+  --color-content-muted: #6B7280;
+
+  /* Estados de Pedidos */
+  --color-order-nuevo: #60A5FA;
+  --color-order-confirmado: #818CF8;
+  --color-order-preparacion: #FBBF24;
+  --color-order-listo: #34D399;
+  --color-order-camino: #38BDF8;
+  --color-order-entregado: #4ADE80;
+  --color-order-cancelado: #9CA3AF;
+  --color-order-incidencia: #F87171;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-num {
+  font-family: 'Space Grotesk', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-surface-ground);
+  color: var(--color-content-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
